@@ -1,0 +1,9 @@
+{
+  "name": "TruffleDevEnv",
+  "version": "0.0.1",
+  "description": "A complete development environment for developing Ethereum Dapps, including client-side and server-side javascript.",
+  "main": "index.js",
+  "repository": "https://github.com/Charterhouse/TruffleDevEnv.git",
+  "contributors": [ "Stefan van den Oord", "Mark Spanbroek" ],
+  "license": "MIT"
+}

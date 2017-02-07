@@ -1,3 +1,6 @@
+/* eslint-env mocha */
+const assert = require('chai').assert
+
 var MetaCoin = artifacts.require('./MetaCoin.sol')
 
 contract('MetaCoin', function (accounts) {
@@ -29,35 +32,35 @@ contract('MetaCoin', function (accounts) {
     var meta
 
     // Get initial balances of first and second account.
-    var account_one = accounts[0]
-    var account_two = accounts[1]
+    var accountOne = accounts[0]
+    var accountTwo = accounts[1]
 
-    var account_one_starting_balance
-    var account_two_starting_balance
-    var account_one_ending_balance
-    var account_two_ending_balance
+    var accountOneStartingBalance
+    var accountTwoStartingBalance
+    var accountOneEndingBalance
+    var accountTwoEndingBalance
 
     var amount = 10
 
     return MetaCoin.deployed().then(function (instance) {
       meta = instance
-      return meta.getBalance.call(account_one)
+      return meta.getBalance.call(accountOne)
     }).then(function (balance) {
-      account_one_starting_balance = balance.toNumber()
-      return meta.getBalance.call(account_two)
+      accountOneStartingBalance = balance.toNumber()
+      return meta.getBalance.call(accountTwo)
     }).then(function (balance) {
-      account_two_starting_balance = balance.toNumber()
-      return meta.sendCoin(account_two, amount, {from: account_one})
+      accountTwoStartingBalance = balance.toNumber()
+      return meta.sendCoin(accountTwo, amount, {from: accountOne})
     }).then(function () {
-      return meta.getBalance.call(account_one)
+      return meta.getBalance.call(accountOne)
     }).then(function (balance) {
-      account_one_ending_balance = balance.toNumber()
-      return meta.getBalance.call(account_two)
+      accountOneEndingBalance = balance.toNumber()
+      return meta.getBalance.call(accountTwo)
     }).then(function (balance) {
-      account_two_ending_balance = balance.toNumber()
+      accountTwoEndingBalance = balance.toNumber()
 
-      assert.equal(account_one_ending_balance, account_one_starting_balance - amount, "Amount wasn't correctly taken from the sender")
-      assert.equal(account_two_ending_balance, account_two_starting_balance + amount, "Amount wasn't correctly sent to the receiver")
+      assert.equal(accountOneEndingBalance, accountOneStartingBalance - amount, "Amount wasn't correctly taken from the sender")
+      assert.equal(accountTwoEndingBalance, accountTwoStartingBalance + amount, "Amount wasn't correctly sent to the receiver")
     })
   })
 })

@@ -10,6 +10,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "ethereumjs-testrpc": "^3.0.3",
     "standard": "^8.6.0",
     "truffle": "^3.1.1"
   },

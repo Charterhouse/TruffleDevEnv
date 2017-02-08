@@ -1,0 +1,23 @@
+{
+  "name": "truffle-devenv-webapp",
+  "version": "0.0.1",
+  "description": "Example webapp using smart contracts",
+  "main": "index.js",
+  "repository": "https://github.com/Charterhouse/TruffleDevEnv.git",
+  "contributors": [
+    "Stefan van den Oord",
+    "Mark Spanbroek"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "truffle-contract": "^1.1.9"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-3": "^6.22.0"
+  }
+}

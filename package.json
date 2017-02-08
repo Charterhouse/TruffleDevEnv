@@ -1,5 +1,5 @@
 {
-  "name": "TruffleDevEnv",
+  "name": "truffle-devenv",
   "version": "0.0.1",
   "description": "A complete development environment for developing Ethereum Dapps, including client-side and server-side javascript.",
   "main": "index.js",
@@ -10,12 +10,11 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "ethereumjs-testrpc": "^3.0.3",
-    "standard": "^8.6.0",
-    "truffle": "^3.1.1"
+    "standard": "^8.6.0"
   },
   "scripts": {
-    "test": "standard && truffle test"
+    "preinstall": "cd lib/contracts && npm install",
+    "test": "standard && cd lib/contracts && npm test"
   },
   "standard": {
     "globals": [

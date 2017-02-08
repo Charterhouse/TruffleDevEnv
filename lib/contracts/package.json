@@ -1,0 +1,19 @@
+{
+  "name": "truffle-devenv-contracts",
+  "version": "0.0.1",
+  "description": "Example contracts",
+  "main": "index.js",
+  "repository": "https://github.com/Charterhouse/TruffleDevEnv.git",
+  "contributors": [
+    "Stefan van den Oord",
+    "Mark Spanbroek"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ethereumjs-testrpc": "^3.0.3",
+    "truffle": "^3.1.1"
+  },
+  "scripts": {
+    "test": "truffle test"
+  }
+}

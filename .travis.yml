@@ -4,12 +4,7 @@ node_js:
 cache:
     yarn: true
 script:
-    - ( cd local_modules/contracts && yarn install )
-    - export TESTRPC_PID=""
-    - ( cd local_modules/contracts && yarn run testrpc & TESTRPC_PID=$! )
-    - sleep 5
-    - yarn test
-    - kill -9 $TESTRPC_PID
+    - .travis-runner.sh
 env:
  - CXX=g++-4.8
 addons:

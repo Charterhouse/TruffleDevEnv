@@ -4,7 +4,7 @@ node_js:
 cache:
     yarn: true
 script:
-    - yarn devsetup
+    - cd local_modules/contracts && yarn install"
     - export TESTRPC_PID=""
     - cd local_modules/contracts && yarn run testrpc & TESTRPC_PID=$! && sleep 5
     - yarn test

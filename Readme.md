@@ -8,6 +8,8 @@ Truffle Development Environment
 To get started, run:
 
 ```sh
-npm install
-npm run devsetup
+yarn run devsetup
 ```
+
+This will install the node modules, and make the required links to local_modules/contracts so that you
+can use the smart contracts just like any other module.

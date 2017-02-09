@@ -14,7 +14,7 @@
   },
   "scripts": {
     "postinstall": "local_modules install -f",
-    "devsetup": "local_modules link -f",
+    "devsetup": "yarn install && local_modules link -f",
     "test": "standard && cd local_modules/contracts && npm test"
   },
   "standard": {

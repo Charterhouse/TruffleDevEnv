@@ -2,6 +2,7 @@ Truffle Development Environment
 ===============================
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+![Travis build status](https://travis-ci.org/Charterhouse/TruffleDevEnv.svg?branch=master)
 
 ### Development
 

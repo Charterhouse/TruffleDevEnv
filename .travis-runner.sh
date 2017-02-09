@@ -10,5 +10,3 @@ startdir="$(cd `dirname $0`; pwd)"
 sleep 5
 
 ( cd ${startdir} && yarn test )
-
-ls ${startdir}/local_modules/webapp/node_modules/.bin

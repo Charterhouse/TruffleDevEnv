@@ -4,7 +4,7 @@ node_js:
 cache:
     yarn: true
 script:
-    - .travis-runner.sh
+    - ./.travis-runner.sh
 env:
  - CXX=g++-5
 addons:

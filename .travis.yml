@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+    - "node"
+cache:
+    yarn: true
+script:
+    - export TESTRPC_PID=""
+    - cd local_modules/contracts && yarn run testrpc & TESTRPC_PID=$! && sleep 5
+    - yarn test
+    - kill -9 $TESTRPC_PID

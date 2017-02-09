@@ -11,7 +11,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devtool: 'eval',
+  devtool: 'source-map',
   module: {
     loaders: [ babelModule ]
   },

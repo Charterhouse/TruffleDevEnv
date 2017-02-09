@@ -5,12 +5,12 @@ const fs = require('fs')
 
 // Workaround for https://github.com/ethereum/web3.js/issues/555:
 module.exports = new WebpackOnBuildPlugin(function (stats) {
-    const bundle = path.resolve(__dirname, '..', 'dist', 'bundle.js')
-    if (fs.existsSync(bundle)) {
-      replace({
-        regex: '\u00A0',
-        replacement: ' ',
-        paths: [ bundle ]
-      })
-    }
-  })
+  const bundle = path.resolve(__dirname, '..', 'dist', 'bundle.js')
+  if (fs.existsSync(bundle)) {
+    replace({
+      regex: '\u00A0',
+      replacement: ' ',
+      paths: [ bundle ]
+    })
+  }
+})

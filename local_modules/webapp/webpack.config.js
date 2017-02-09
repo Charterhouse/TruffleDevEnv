@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackOnBuildPlugin = require('on-build-webpack')
 const replace = require('replace')
 const path = require('path')
+const fs = require('fs')
 
 module.exports = {
   entry: [
@@ -34,11 +35,14 @@ module.exports = {
     }),
     // Workaround for https://github.com/ethereum/web3.js/issues/555:
     new WebpackOnBuildPlugin(function (stats) {
-      replace({
-        regex: '\u00A0',
-        replacement: ' ',
-        paths: [ path.resolve(__dirname, 'dist', 'bundle.js') ]
-      })
+      const bundle = path.resolve(__dirname, 'dist', 'bundle.js')
+      if (fs.existsSync(bundle)) {
+        replace({
+          regex: '\u00A0',
+          replacement: ' ',
+          paths: [ bundle ]
+        })
+      }
     })
   ]
 }

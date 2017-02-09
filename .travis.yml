@@ -6,10 +6,10 @@ cache:
 script:
     - .travis-runner.sh
 env:
- - CXX=g++-4.8
+ - CXX=g++-5
 addons:
  apt:
   sources:
    - ubuntu-toolchain-r-test
   packages:
-   - g++-4.8
+   - g++-5

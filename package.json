@@ -13,13 +13,17 @@
     "standard": "^8.6.0"
   },
   "scripts": {
-    "preinstall": "cd lib/contracts && npm install",
-    "test": "standard && cd lib/contracts && npm test"
+    "postinstall": "local_modules install -f",
+    "devsetup": "local_modules link -f",
+    "test": "standard && cd local_modules/contracts && npm test"
   },
   "standard": {
     "globals": [
       "artifacts",
       "contract"
     ]
+  },
+  "dependencies": {
+    "local_modules": "^1.0.8"
   }
 }

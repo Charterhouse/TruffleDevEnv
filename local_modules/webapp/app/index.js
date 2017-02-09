@@ -9,8 +9,8 @@ import Web3 from 'web3'
 
 var web3Location = `http://localhost:8545`
 
-window.addEventListener('load', function() {
-  var web3Provided;
+window.addEventListener('load', function () {
+  var web3Provided
   // Supports Metamask and Mist, and other wallets that provide 'web3'.
   if (typeof web3 !== 'undefined') {
     // Use the Mist/wallet provider.

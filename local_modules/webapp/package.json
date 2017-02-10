@@ -1,6 +1,6 @@
 {
   "name": "truffle-devenv-webapp",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Example webapp using smart contracts",
   "main": "index.js",
   "repository": "https://github.com/Charterhouse/TruffleDevEnv.git",

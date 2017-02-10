@@ -1,6 +1,6 @@
 {
   "name": "truffle-devenv-contracts",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Example contracts",
   "main": "index.js",
   "repository": "https://github.com/Charterhouse/TruffleDevEnv.git",

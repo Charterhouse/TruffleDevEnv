@@ -6,7 +6,7 @@ Truffle Development Environment
 
 This is a template project to quickly get started with development of
 Ethereum smart contracts and the web interface to them. It provides a
-setup based on [Truffle](https://truffleframework.com) for the smart
+setup based on [Truffle](http://truffleframework.com) for the smart
 contracts, and [React](https://facebook.github.io/react/) for client-side
 JavaScript. It also provides a setup for unit testing both the smart
 contracts and the client-side code.

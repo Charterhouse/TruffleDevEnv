@@ -1,5 +1,5 @@
 /* eslint-env mocha */
-const expect = require('chai').expect
+import { expect } from 'chai'
 
 describe('Array', function () {
   describe('#indexOf()', function () {

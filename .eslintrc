@@ -1,0 +1,11 @@
+{
+  "extends": [ "standard", "standard-jsx", "standard-react" ],
+  "parser": "babel-eslint",
+  "globals": {
+    "artifacts": false,
+    "contract": false
+  },
+  "rules": {
+    "no-unused-vars": ["error", { "varsIgnorePattern": "render|Link" }]
+  }
+}

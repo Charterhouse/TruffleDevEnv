@@ -22,7 +22,7 @@
   "scripts": {
     "postinstall": "local_modules install -f",
     "devsetup": "yarn install && local_modules link -f && cd local_modules/contracts && yarn install",
-    "test": "eslint . && ( cd local_modules/contracts && yarn test ) && ( cd local_modules/webapp && yarn test )"
+    "test": "eslint . && ( cd local_modules/contracts && yarn test ) && ( cd local_modules/webapp && yarn test ) && ( cd local_modules/restserver && yarn test )"
   },
   "dependencies": {
     "local_modules": "^1.0.8"

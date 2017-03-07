@@ -1,5 +1,5 @@
 {
-  "name": "truffle-devenv-contracts",
+  "name": "app-contracts",
   "version": "0.1.0",
   "description": "Example contracts",
   "main": "index.js",

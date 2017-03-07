@@ -1,5 +1,5 @@
 {
-  "name": "truffle-devenv-webapp",
+  "name": "app-webapp",
   "version": "0.1.0",
   "description": "Example webapp using smart contracts",
   "main": "index.js",

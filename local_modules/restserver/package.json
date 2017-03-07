@@ -1,5 +1,5 @@
 {
-  "name": "restserver",
+  "name": "app-restserver",
   "version": "0.1.0",
   "description": "A REST server that uses the smart contracts.",
   "main": "index.js",

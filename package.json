@@ -20,7 +20,7 @@
   },
   "scripts": {
     "postinstall": "local_modules install --force --dir src",
-    "devsetup": "yarn install && local_modules link --force --dir src && cd src/app-contracts && yarn install",
+    "devsetup": "yarn install && local_modules link --force --dir src && ( cd src/app-contracts && yarn install ) && ( cd src/app-webapp && yarn install )",
     "test": "eslint . && ( cd src/app-contracts && yarn test ) && ( cd src/app-webapp && yarn test ) && ( cd src/app-restserver && yarn test )"
   },
   "dependencies": {

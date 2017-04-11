@@ -3,6 +3,7 @@ const babelModule = require('./webpack/babel-module')
 const cssModule = require('./webpack/css-module')
 const htmlPlugin = require('./webpack/html-plugin')
 const workaroundPlugin = require('./webpack/workaround-plugin')
+const imgModule = require('./webpack/img-module')
 
 module.exports = {
   entry: [
@@ -14,7 +15,7 @@ module.exports = {
   },
   devtool: 'source-map',
   module: {
-    loaders: [ babelModule, cssModule ]
+    loaders: [ babelModule, cssModule, imgModule ]
   },
   devServer: {
     contentBase: 'dist'

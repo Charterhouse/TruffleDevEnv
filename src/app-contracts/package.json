@@ -14,8 +14,8 @@
     "truffle": "^3.1.1"
   },
   "scripts": {
-    "install": "truffle compile",
-    "test": "truffle test"
+    "install": "yarn run truffle compile",
+    "test": "yarn run truffle test"
   },
   "engines": {
     "node": ">=7.6.0"

@@ -1,16 +1,16 @@
 {
   "name": "app-webapp",
   "version": "0.1.0",
-  "description": "Webapp for permissions system",
+  "description": "Webapp for TruffleDevEnv",
   "main": "index.js",
-  "repository": "ssh://git@bitbucket.atlas.philips.com:7999/bla/permissions.git",
+  "repository": "https://github.com/Charterhouse/TruffleDevEnv.git",
   "contributors": [
     "Stefan van den Oord",
     "Mark Spanbroek"
   ],
   "license": "MIT",
   "scripts": {
-    "devserver": "webpack-dev-server --open --hot",
+    "start": "webpack-dev-server",
     "test": "mocha  --compilers js:babel-register",
     "test:watch": "yarn run test -- --reporter min --watch"
   },
@@ -20,11 +20,12 @@
     "img-loader": "^2.0.0",
     "on-build-webpack": "^0.1.0",
     "react": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
+    "react-bootstrap-button-loader": "^1.0.7",
     "react-dom": "^15.4.2",
     "replace": "^0.3.0",
     "truffle-contract": "^2.0.0",
-    "url-loader": "^0.5.8",
-    "webpack-dev-server": "^2.3.0"
+    "url-loader": "^0.5.8"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
@@ -40,7 +41,9 @@
     "postcss-loader": "^1.2.2",
     "postcss-smart-import": "^0.6.7",
     "precss": "^1.4.0",
+    "react-hot-loader": "^3.0.0-beta.6",
     "style-loader": "^0.13.1",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
   }
 }

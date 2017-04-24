@@ -17,10 +17,9 @@ async function ropstenAvailable () {
   console.log(`Deploying to ethereum node running on port ${ropstenPort}.`)
 
   const buildDir = path.join(__dirname, '..', 'build')
-  const tempDir = path.join(__dirname, '..', 'build.orig')
   const releaseDir = path.join(__dirname, '..', 'released')
 
-  await fs.moveAsync(buildDir, tempDir)
+  await fs.removeAsync(buildDir)
   await fs.moveAsync(releaseDir, buildDir)
 
   try {
@@ -28,7 +27,7 @@ async function ropstenAvailable () {
     await truffleNetworksClean()
   } finally {
     await fs.moveAsync(buildDir, releaseDir)
-    await fs.moveAsync(tempDir, buildDir)
+    await fs.copyAsync(releaseDir, buildDir)
   }
 }
 

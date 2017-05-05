@@ -1,10 +1,11 @@
 const contract = require('truffle-contract')
 
-const ConvertLibJSON = require('./build/contracts/ConvertLib.json')
-const MetaCoinJSON = require('./build/contracts/MetaCoin.json')
+function requireContract (name) {
+  return contract(require('./build/contracts/' + name + '.json'))
+}
 
-const ConvertLib = contract(ConvertLibJSON)
-const MetaCoin = contract(MetaCoinJSON)
+const ConvertLib = requireContract('ConvertLib')
+const MetaCoin = requireContract('MetaCoin')
 
 function setProvider (web3Provider) {
   ConvertLib.setProvider(web3Provider)

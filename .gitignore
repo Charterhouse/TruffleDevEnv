@@ -1,6 +1,7 @@
 node_modules
 build
 .idea/*
+!.idea/*.iml
 !.idea/codeStyleSettings.xml
 !.idea/jsLibraryMappings.xml
 !.idea/misc.xml

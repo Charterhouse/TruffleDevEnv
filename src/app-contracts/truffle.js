@@ -1,4 +1,4 @@
-module.exports = {
+let truffleOptions = {
   networks: {
     ropsten: {
       host: 'localhost',
@@ -13,3 +13,12 @@ module.exports = {
     }
   }
 }
+
+let reporterArg = process.argv.indexOf('--reporter')
+if (reporterArg >= 0) {
+  truffleOptions['mocha'] = {
+    reporter: process.argv[reporterArg + 1]
+  }
+}
+
+module.exports = truffleOptions

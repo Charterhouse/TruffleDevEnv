@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Smart Contracts" type="mocha-javascript-test-runner" factoryName="Mocha">
+    <node-interpreter>project</node-interpreter>
+    <node-options>-r truffle/cli truffle test</node-options>
+    <working-directory>$PROJECT_DIR$/src/app-contracts</working-directory>
+    <pass-parent-env>true</pass-parent-env>
+    <envs />
+    <ui>bdd</ui>
+    <extra-mocha-options />
+    <test-kind>PATTERN</test-kind>
+    <test-pattern>test/MetaCoin.js test/TestMetacoin.sol</test-pattern>
+    <method />
+  </configuration>
+</component>

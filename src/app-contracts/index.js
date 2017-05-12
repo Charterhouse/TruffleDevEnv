@@ -1,25 +1,26 @@
 const contract = require('truffle-contract')
 
-function requireContract (name) {
-  return contract(require('./build/contracts/' + name + '.json'))
-}
+const contractNames = [ 'ConvertLib', 'MetaCoin' ]
 
-const ConvertLib = requireContract('ConvertLib')
-const MetaCoin = requireContract('MetaCoin')
+let contracts = {}
+contractNames.forEach(function (name) {
+  const json = require(`./build/contracts/${name}.json`)
+  contracts[name] = contract(json)
+})
 
 function setProvider (web3Provider) {
-  ConvertLib.setProvider(web3Provider)
-  MetaCoin.setProvider(web3Provider)
+  for (let name in contracts) {
+    contracts[name].setProvider(web3Provider)
+  }
 }
 
 function setTransactionDefaults (defaults) {
-  ConvertLib.defaults(defaults)
-  MetaCoin.defaults(defaults)
+  for (let name in contracts) {
+    contracts[name].defaults(defaults)
+  }
 }
 
-module.exports = {
-  ConvertLib: ConvertLib,
-  MetaCoin: MetaCoin,
+module.exports = Object.assign({}, contracts, {
   setTransactionDefaults: setTransactionDefaults,
   setProvider: setProvider
-}
+})

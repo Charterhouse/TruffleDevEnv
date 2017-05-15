@@ -13,3 +13,5 @@ build
 !.idea/runConfigurations/*
 !.idea/fileTemplates
 !.idea/fileTemplates/*
+!.idea/libraries
+!.idea/libraries/*

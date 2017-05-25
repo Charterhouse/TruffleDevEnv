@@ -19,6 +19,7 @@
   "scripts": {
     "install": "yarn run truffle compile",
     "test": "yarn run truffle test",
+    "testrpc": "testrpc",
     "deploy-ropsten": "node deploy/ropsten.js"
   },
   "engines": {

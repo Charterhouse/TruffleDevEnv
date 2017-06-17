@@ -14,7 +14,7 @@
     "ethereumjs-testrpc": "^3.0.5",
     "fs-extra-promise": "^1.0.1",
     "is-port-reachable": "^2.0.0",
-    "truffle": "^3.2.1"
+    "truffle": "^3.2.5"
   },
   "scripts": {
     "install": "yarn run truffle compile",

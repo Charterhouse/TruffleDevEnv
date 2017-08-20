@@ -1,3 +1,5 @@
+const TestRPC = require('ethereumjs-testrpc')
+
 let truffleOptions = {
   networks: {
     ropsten: {
@@ -16,6 +18,10 @@ let truffleOptions = {
       host: 'localhost',
       port: 8545,
       network_id: '*' // Match any network id
+    },
+    testing: {
+      network_id: '*',
+      provider: TestRPC.provider()
     }
   }
 }

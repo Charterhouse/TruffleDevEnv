@@ -1,6 +1,6 @@
 const isPortReachable = require('is-port-reachable')
 const spawn = require('child-process-promise').spawn
-const fs = require('fs-extra-promise')
+const fs = require('fs-extra')
 const path = require('path')
 
 async function deploy (networkName, networkPort, gethArgs) {
@@ -10,15 +10,15 @@ async function deploy (networkName, networkPort, gethArgs) {
     const buildDir = path.join(__dirname, '..', 'build')
     const releaseDir = path.join(__dirname, '..', 'released', networkName)
 
-    await fs.removeAsync(buildDir)
-    await fs.moveAsync(releaseDir, buildDir)
+    await fs.remove(buildDir)
+    await fs.move(releaseDir, buildDir)
 
     try {
       await truffleMigrate()
       await truffleNetworksClean()
     } finally {
-      await fs.moveAsync(buildDir, releaseDir)
-      await fs.copyAsync(releaseDir, buildDir)
+      await fs.move(buildDir, releaseDir)
+      await fs.copy(releaseDir, buildDir)
     }
   }
 

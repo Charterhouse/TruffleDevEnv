@@ -23,14 +23,15 @@ let truffleOptions = {
       network_id: '*',
       provider: TestRPC.provider()
     }
+  },
+  mocha: {
+    slow: 250
   }
 }
 
 let reporterArg = process.argv.indexOf('--reporter')
 if (reporterArg >= 0) {
-  truffleOptions['mocha'] = {
-    reporter: process.argv[reporterArg + 1]
-  }
+  truffleOptions.mocha.reporter = process.argv[reporterArg + 1]
 }
 
 module.exports = truffleOptions

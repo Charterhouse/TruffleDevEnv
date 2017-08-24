@@ -1,9 +1,9 @@
 {
   "name": "app-restserver",
   "version": "0.1.0",
-  "description": "A REST server that uses the smart contracts.",
+  "description": "A REST server",
   "main": "index.js",
-  "repository": "https://github.com/Charterhouse/TruffleDevEnv.git",
+  "repository": ".",
   "contributors": [
     "Stefan van den Oord",
     "Mark Spanbroek"

@@ -2,7 +2,6 @@ const path = require('path')
 const babelModule = require('./webpack/babel-module')
 const cssModule = require('./webpack/css-module')
 const htmlPlugin = require('./webpack/html-plugin')
-const workaroundPlugin = require('./webpack/workaround-plugin')
 const imgModule = require('./webpack/img-module')
 const hotReplacementPlugin = require('./webpack/hot-replacement-plugin')
 const namedModulesPlugin = require('./webpack/named-modules-plugin')
@@ -47,7 +46,6 @@ module.exports = {
   },
   plugins: [
     htmlPlugin,
-    workaroundPlugin,
     hotReplacementPlugin,
     namedModulesPlugin,
     noEmitOnErrorsPlugin

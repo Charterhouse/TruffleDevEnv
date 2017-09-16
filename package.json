@@ -25,6 +25,7 @@
     "testrpc": "( cd src/app-contracts && yarn testrpc )"
   },
   "dependencies": {
-    "local_modules": "^1.0.8"
+    "local_modules": "^1.0.8",
+    "node-gyp": "^3.6.2"
   }
 }

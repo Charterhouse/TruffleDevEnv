@@ -10,12 +10,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "chai": "^4.1.0",
+    "chai-as-promised": "^7.1.0",
     "child-process-promise": "^2.2.1",
     "ethereumjs-testrpc": "^3.0.5",
     "fs-extra": "^4.0.1",
     "is-port-reachable": "^2.0.0",
-    "chai-as-promised": "^7.1.0",
-    "chai": "^4.1.0",
     "truffle": "^3.2.5"
   },
   "scripts": {

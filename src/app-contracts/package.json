@@ -20,7 +20,7 @@
   },
   "scripts": {
     "install": "yarn run truffle compile",
-    "test": "yarn run truffle test -- --network testing",
+    "test": "yarn run truffle test --network testing",
     "testrpc": "testrpc",
     "deploy-ropsten": "node deploy/ropsten.js",
     "deploy-rinkeby": "node deploy/rinkeby.js"

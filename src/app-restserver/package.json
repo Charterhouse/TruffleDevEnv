@@ -33,6 +33,6 @@
   "scripts": {
     "start": "nodemon src/index.js --exec \"node -r 'babel-register'\"",
     "test": "mocha  --compilers js:babel-register",
-    "test:watch": "yarn run test -- --reporter min --watch"
+    "test:watch": "yarn run test --reporter min --watch"
   }
 }

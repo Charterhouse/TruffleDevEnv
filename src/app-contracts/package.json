@@ -15,7 +15,9 @@
     "child-process-promise": "^2.2.1",
     "ethereumjs-testrpc": "^3.0.5",
     "fs-extra": "^4.0.1",
-    "is-port-reachable": "^2.0.0",
+    "is-port-reachable": "^2.0.0"
+  },
+  "dependencies": {
     "truffle": "^3.2.5"
   },
   "scripts": {

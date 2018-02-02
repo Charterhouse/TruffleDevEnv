@@ -11,8 +11,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "yarn run mocha --compilers js:babel-register",
-    "test:watch": "yarn run test --reporter min --watch"
+    "test": "mocha --compilers js:babel-register",
+    "test:watch": "yarn test --reporter min --watch"
   },
   "dependencies": {
     "babel-runtime": "^6.22.0",

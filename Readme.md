@@ -23,5 +23,5 @@ initialize a new git repo and add the initial state of your project.
    (cd src/app-restserver; yarn init)
    (cd src/app-webapp; yarn init)
    ```
-4. Run `yarn run devsetup` to have all Node dependencies installed and local 
+4. Run `yarn devsetup` to have all Node dependencies installed and local 
 modules configured properly.

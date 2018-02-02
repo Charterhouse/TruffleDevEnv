@@ -19,8 +19,8 @@
     "truffle": "^3.2.5"
   },
   "scripts": {
-    "install": "yarn run truffle compile",
-    "test": "yarn run truffle test --network testing",
+    "install": "truffle compile",
+    "test": "yarn truffle test --network testing",
     "testrpc": "testrpc",
     "deploy-ropsten": "node deploy/ropsten.js",
     "deploy-rinkeby": "node deploy/rinkeby.js"

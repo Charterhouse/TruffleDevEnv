@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "src/app-contracts/package.json",
+        "src/app-restserver/package.json",
+        "src/app-webapp/app/components/app/package.json",
+        "src/app-webapp/package.json"
+      ]
+    }
+  }
+}

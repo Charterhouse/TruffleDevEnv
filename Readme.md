@@ -1,7 +1,7 @@
 Truffle Development Environment
 ===============================
 
-[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Greenkeeper badge](https://badges.greenkeeper.io/Charterhouse/TruffleDevEnv.svg)](https://greenkeeper.io/)
 ![Travis build status](https://travis-ci.org/Charterhouse/TruffleDevEnv.svg?branch=master)
 
 ## ⚠️ Warning: Deprecated ⚠️

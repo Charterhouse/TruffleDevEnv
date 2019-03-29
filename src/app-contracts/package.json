@@ -18,7 +18,7 @@
     "is-port-reachable": "^2.0.0"
   },
   "dependencies": {
-    "truffle": "^4.1.13"
+    "truffle": "^5.0.10"
   },
   "scripts": {
     "install": "truffle compile",

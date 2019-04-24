@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "local_modules": "^1.0.8",
-    "node-gyp": "^3.6.2"
+    "node-gyp": "^4.0.0"
   }
 }
